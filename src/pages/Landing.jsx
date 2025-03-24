@@ -1,11 +1,48 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+//import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Landing = () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen flex flex-col justify-center items-center">
-      {/* Hero Section */}
-      <div className="text-center space-y-4">
+    <div
+      className="bg-black
+     text-white min-h-screen flex flex-col justify-center items-center"
+    >
+      <div className="flex flex-row">
+        {" "}
+        <div className="w-1/2">
+          <h1 className="mt-40 px-20  text-7xl font-bold animate-fade-in-up">
+            Hey! I'm Kirubha
+          </h1>
+          <p className="p-20 text-2xl">
+            A passionate web developer who loves crafting beautiful UIs. Skilled
+            in React, Tailwind, and Supabase, with a growing interest in machine
+            learning
+          </p>
+        </div>
+        <div className="border-4 z-20 border-white p-4 m-20 rounded-full">
+          <div className="border-4 border-red-300 p-2 rounded-full">
+            <img
+              src="/me!!.jpg" // Correct path for Vite (in public folder)
+              alt="Profile Pic"
+              className="w-80 h-80 object-cover rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="absolute z-0 -top-50 -right-50 border-4 border-white p-4 rounded-full">
+        <div className="border-4 border-red-300 p-6 rounded-full w-200 h-200"></div>
+      </div>
+    </div>
+  );
+};
+
+export default Landing;
+
+{
+  /* Hero Section */
+}
+{
+  /* <div className="text-center space-y-4">
         <h1 className="text-5xl font-bold animate-fade-in-up">
           👋 Hi, I'm <span className="text-blue-500">Your Name</span>
         </h1>
@@ -41,31 +78,5 @@ const Landing = () => {
             <FaTwitter size={30} />
           </a>
         </div>
-      </div>
-
-      {/* About Me Section */}
-      <div className="bg-gray-800 p-8 rounded-2xl shadow-lg max-w-3xl mx-auto mt-12 text-center animate-fade-in-up">
-        <h2 className="text-3xl font-bold mb-4">💡 About Me</h2>
-        <p className="text-gray-400 leading-relaxed">
-          I specialize in building modern, responsive web applications using
-          <span className="text-blue-400"> React</span>, Tailwind CSS, and
-          exploring the world of{" "}
-          <span className="text-blue-400">Machine Learning</span>. I'm
-          constantly learning and improving to create impactful projects.
-        </p>
-      </div>
-
-      {/* CTA Section */}
-      <div className="mt-12 animate-fade-in-up">
-        <a
-          href="#projects"
-          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-2xl text-lg font-bold shadow-lg transition-all"
-        >
-          🚀 View My Projects
-        </a>
-      </div>
-    </div>
-  );
-};
-
-export default Landing;
+      </div> */
+}

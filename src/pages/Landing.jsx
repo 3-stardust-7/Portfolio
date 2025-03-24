@@ -1,38 +1,54 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 //import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Landing = () => {
   return (
-    <div
-      className="bg-black
+    <>
+      <div className="fixed">
+        <Navbar />
+      </div>
+      <div
+        className="bg-black
      text-white min-h-screen flex flex-col justify-center items-center"
-    >
-      <div className="flex flex-row">
-        {" "}
-        <div className="w-1/2">
-          <h1 className="mt-40 px-20  text-7xl font-bold animate-fade-in-up">
-            Hey! I'm Kirubha
-          </h1>
-          <p className="p-20 text-2xl">
-            A passionate web developer who loves crafting beautiful UIs. Skilled
-            in React, Tailwind, and Supabase, with a growing interest in machine
-            learning
-          </p>
+      >
+        <div className="flex flex-row">
+          {" "}
+          <div className="w-1/2 ">
+            <h1 className="mt-40 px-20  text-7xl font-bold animate-fade-in-up">
+              Hey! I'm <span className="text-red-300">Kirubha</span>
+            </h1>
+            <p className="p-20 font-light text-2xl">
+              A passionate web developer who loves crafting beautiful UIs.
+              Skilled in React, Tailwind, and Supabase, with a growing interest
+              in machine learning
+            </p>
+          </div>
+          <div className="border-4 z-20 border-white p-4 m-20 rounded-full">
+            <div className="border-2 border-red-300 p-2 rounded-full">
+              <img
+                src="/me!!.jpg" // Correct path for Vite (in public folder)
+                alt="Profile Pic"
+                className="w-100 h-100 object-cover rounded-full"
+              />
+            </div>
+          </div>
         </div>
-        <div className="border-4 z-20 border-white p-4 m-20 rounded-full">
-          <div className="border-4 border-red-300 p-2 rounded-full">
+        <div className="absolute z-0 -top-50 -right-50 border-4 border-white p-4 rounded-full">
+          <div className="border-2 border-red-300 p-6 rounded-full w-200 h-200"></div>
+        </div>
+        <div className="fixed  top-8 right-10 border-2 border-white p-2 rounded-full z-0">
+          <div className="border-2 border-red-300 p-2 rounded-full w-22 h-22">
+            {" "}
             <img
-              src="/me!!.jpg" // Correct path for Vite (in public folder)
+              src="/k.png" // Correct path for Vite (in public folder)
               alt="Profile Pic"
-              className="w-80 h-80 object-cover rounded-full"
+              className="w-18 h-18 object-cover rounded-full"
             />
           </div>
         </div>
       </div>
-      <div className="absolute z-0 -top-50 -right-50 border-4 border-white p-4 rounded-full">
-        <div className="border-4 border-red-300 p-6 rounded-full w-200 h-200"></div>
-      </div>
-    </div>
+    </>
   );
 };
 

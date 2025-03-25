@@ -5,16 +5,15 @@ import Navbar from "../components/Navbar";
 const Landing = () => {
   return (
     <>
-      <div className="fixed">
+      <div className="fixed z-100 ml-10">
         <Navbar />
       </div>
       <div
         className="bg-black
-     text-white min-h-screen flex flex-col justify-center items-center"
+     text-white min-h-screen flex lg:flex-col flex-row justify-center items-center"
       >
-        <div className="flex flex-row">
-          {" "}
-          <div className="w-1/2 ">
+        <div className="flex lg:flex-row flex-col">
+          <div className="w-1/2  z-50 lg:bg-none bg-black">
             <h1 className="mt-40 px-20  text-7xl font-bold animate-fade-in-up">
               Hey! I'm <span className="text-red-300">Kirubha</span>
             </h1>
@@ -24,29 +23,31 @@ const Landing = () => {
               in machine learning
             </p>
           </div>
-          <div className="border-4 z-20 border-white p-4 m-20 rounded-full">
-            <div className="border-2 border-red-300 p-2 rounded-full">
+          <div className="border-4 lg:ml-0 ml-36 z-20 w-116 h-116 border-white p-4 m-20 rounded-full">
+            <div className="w-106 h-106  border-2 border-red-300 p-2 rounded-full">
               <img
                 src="/me!!.jpg" // Correct path for Vite (in public folder)
                 alt="Profile Pic"
-                className="w-100 h-100 object-cover rounded-full"
+                className="w-102  h-102 object-cover rounded-full"
               />
             </div>
           </div>
         </div>
         <div className="absolute z-0 -top-50 -right-50 border-4 border-white p-4 rounded-full">
-          <div className="border-2 border-red-300 p-6 rounded-full w-200 h-200"></div>
-        </div>
-        <div className="fixed  top-8 right-10 border-2 border-white p-2 rounded-full z-0">
-          <div className="border-2 border-red-300 p-2 rounded-full w-22 h-22">
-            {" "}
+          <div className="border-2 border-red-300 p-4 rounded-full lg:w-200 lg:h-200">
             <img
-              src="/k.png" // Correct path for Vite (in public folder)
+              src="/bnw.jpg" // Correct path for Vite (in public folder)
               alt="Profile Pic"
-              className="w-18 h-18 object-cover rounded-full"
+              className="w-200 opacity-50 h-190 object-cover rounded-full"
             />
           </div>
         </div>
+
+        <img
+          src="/k.png" // Correct path for Vite (in public folder)
+          alt="Profile Pic"
+          className="fixed z-100 w-18 h-18 top-4 left-10 object-cover rounded-full"
+        />
       </div>
     </>
   );

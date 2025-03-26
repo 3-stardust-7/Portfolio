@@ -8,12 +8,9 @@ const Landing = () => {
       <div className="fixed z-100 ml-10">
         <Navbar />
       </div>
-      <div
-        className="bg-black
-     text-white min-h-screen flex lg:flex-col flex-row justify-center items-center"
-      >
+      <div className="bg-black w-full text-white min-h-screen flex lg:flex-col flex-row justify-center items-center">
         <div className="flex lg:flex-row flex-col">
-          <div className="w-1/2  z-50 lg:bg-none bg-black">
+          <div className="w-1/2 sm:ml-0 ml-20 z-50 lg:bg-none bg-black">
             <h1 className="mt-40 px-20  text-7xl font-bold animate-fade-in-up">
               Hey! I'm <span className="text-red-300">Kirubha</span>
             </h1>
@@ -33,21 +30,17 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="absolute z-0 -top-50 -right-50 border-4 border-white p-4 rounded-full">
-          <div className="border-2 border-red-300 p-4 rounded-full lg:w-200 lg:h-200">
-            <img
-              src="/bnw.jpg" // Correct path for Vite (in public folder)
-              alt="Profile Pic"
-              className="w-200 opacity-50 h-190 object-cover rounded-full"
-            />
+          <div className="absolute z-0 -top-50 -right-50 border-4 border-white p-4 rounded-full">
+            <div className="border-2 border-red-300 p-4 rounded-full lg:w-200 lg:h-200">
+              <img
+                src="/bnw.jpg" // Correct path for Vite (in public folder)
+                alt="Profile Pic"
+                className="w-200 opacity-50 h-190 object-cover rounded-full"
+              />
+            </div>
           </div>
-        </div>
 
-        <img
-          src="/k.png" // Correct path for Vite (in public folder)
-          alt="Profile Pic"
-          className="fixed z-100 w-18 h-18 top-4 left-10 object-cover rounded-full"
-        />
+      
       </div>
     </>
   );

@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import SocialIcons from "../components/Socialicons";
+
 //import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Landing = () => {
@@ -10,8 +12,8 @@ const Landing = () => {
       </div>
       <div className="bg-black w-full text-white min-h-screen flex lg:flex-col flex-row justify-center items-center">
         <div className="flex lg:flex-row flex-col">
-          <div className="w-1/2 sm:ml-0 ml-20 z-50 lg:bg-none bg-black">
-            <h1 className="mt-40 px-20  text-7xl font-bold animate-fade-in-up">
+          <div className="w-1/2 sm:ml-0 ml-18  z-50 lg:bg-none bg-black">
+            <h1 className="mt-40 px-20 text-7xl font-bold animate-fade-in-up">
               Hey! I'm <span className="text-red-300">Kirubha</span>
             </h1>
             <p className="p-20 font-light text-2xl">
@@ -30,17 +32,18 @@ const Landing = () => {
             </div>
           </div>
         </div>
-          <div className="absolute z-0 -top-50 -right-50 border-4 border-white p-4 rounded-full">
-            <div className="border-2 border-red-300 p-4 rounded-full lg:w-200 lg:h-200">
-              <img
-                src="/bnw.jpg" // Correct path for Vite (in public folder)
-                alt="Profile Pic"
-                className="w-200 opacity-50 h-190 object-cover rounded-full"
-              />
-            </div>
+        <div className="absolute z-0 -top-50 -right-50 border-4 border-white p-4 rounded-full">
+          <div className="border-2 border-red-300 p-4 rounded-full lg:w-200 lg:h-200">
+            <img
+              src="/bnw.jpg" // Correct path for Vite (in public folder)
+              alt="Profile Pic"
+              className="w-200 opacity-50 h-190 object-cover rounded-full"
+            />
           </div>
-
-      
+        </div>
+      </div>
+      <div className="bg-black pb-20">
+        <SocialIcons />
       </div>
     </>
   );

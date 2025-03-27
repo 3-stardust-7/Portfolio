@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import SocialIcons from "../components/Socialicons";
 
 const About = () => {
 
@@ -8,19 +9,19 @@ const About = () => {
       year: "2023 - 2027",
       title: "Bachelor's Degree in Computer Science & Engineering",
       institution: "Government Model Engineering College",
-      description: "Focused on web development, AI, and data science.",
+      description: "Focused on web development",
     },
     {
       year: "2021 - 2023",
       title: "Higher Secondary School",
       institution: "Campion School",
-      description: "Specialized in thenBio-Math stream 94.4%",
+      description: "Specialized in thenBio-Math stream with 95.4%",
     },
     {
       year: "2011 - 2021",
       title: "Secondary School",
       institution: "Campion School",
-      description: "Completed 10th grade with 94.4%",
+      description: "Completed 10th grade with 94.8%",
     },
   ];
 
@@ -31,7 +32,9 @@ const About = () => {
       </div>
       <div className="flex bg-black flex-col">
         <div className=" z-10 sm:mt-120 lg:mt-10 h-screen text-white p-20">
-          <h1 className="text-5xl mt-0 font-bold py-10">My Bio</h1>
+          <h1 className="text-5xl mt-0 font-bold py-10">
+            My <span className="text-red-300">Bio</span>
+          </h1>
           <p className=" text-2xl lg:w-1/2  font-light">
             Hey, I’m Kirubha. I’m from Salem, TN. Even so I’ve been living in
             Kochi for more than 10 years having completed my schooling at
@@ -53,6 +56,9 @@ const About = () => {
               />
             </div>
           </div>
+        </div>
+        <div className="bg-black pb-20">
+          <SocialIcons />
         </div>
 
         <div className=" bg-black lg:px-86 p-8">

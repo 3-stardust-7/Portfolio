@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Projects = () => {
   
@@ -139,6 +140,9 @@ const projectsData = [
             </div>
           </div>
         </section>
+        <div>
+          <Footer />
+        </div>
       </div>
     </>
   );

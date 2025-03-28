@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import SocialIcons from "../components/Socialicons";
+import Footer from "../components/Footer";
 
 const About = () => {
 
@@ -86,6 +87,9 @@ const About = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );

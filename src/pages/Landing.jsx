@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import SocialIcons from "../components/Socialicons";
 import Marquee from "react-fast-marquee";
-
+import Footer from "../components/Footer";
 
 //import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -61,6 +61,9 @@ const Landing = () => {
       </div>
       <hr className="border-t-2 border-red-300 my-4" />
       <div className="min-h-screen bg-gray-400"></div>
+      <div>
+        <Footer />
+      </div>
     </>
   );
 };

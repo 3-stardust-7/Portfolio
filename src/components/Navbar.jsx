@@ -4,10 +4,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="text-white p-8">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="text-white bg-gradient-to-b from-black w-full p-8">
+      <div className="ml-20 flex justify-self-start">
         {/* Logo or Brand Name */}
-        <div className="flex items-center space-x-4">
+        <div className="">
           <img
             src="/k.png" // Correct path for Vite (in public folder)
             alt="Profile Pic"
@@ -29,13 +29,12 @@ const Navbar = () => {
           <a href="/projects" className="hover:text-red-300 transition">
             Projects
           </a>
-
         </div>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden  text-white focus:outline-none text-2xl"
+          className="md:hidden text-white focus:outline-none text-2xl absolute left-36 sm:top-4 sm:-right-120"
         >
           {isOpen ? "✕" : "☰"}
         </button>
@@ -45,7 +44,7 @@ const Navbar = () => {
       <div
         className={`md:hidden ${
           isOpen ? "block" : "hidden"
-        } bg-black text-white space-y-2 pt-4`}
+        } bg-black mt-4 text-white space-y-2 w-1/2 pt-4`}
       >
         <a href="/" className="block px-4 py-2 hover:bg-red-300 transition">
           Home
@@ -57,12 +56,11 @@ const Navbar = () => {
           About
         </a>
         <a
-          href="#projects"
+          href="/projects"
           className="block px-4 py-2 hover:bg-red-300 transition"
         >
           Projects
         </a>
-        
       </div>
     </nav>
   );

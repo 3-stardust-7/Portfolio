@@ -1,13 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import SocialIcons from "../components/Socialicons";
+import Marquee from "react-fast-marquee";
+
 
 //import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Landing = () => {
   return (
     <>
-      <div className="fixed z-100 ml-10">
+      <div className=" fixed w-full z-100 ">
         <Navbar />
       </div>
       <div className="bg-black w-full text-white min-h-screen flex lg:flex-col flex-row justify-center items-center">
@@ -21,6 +23,9 @@ const Landing = () => {
               Skilled in React, Tailwind, and Supabase, with a growing interest
               in machine learning
             </p>
+            <div className="bg-black sm:ml-0 ml-16  pb-20">
+              <SocialIcons />
+            </div>
           </div>
           <div className="border-4 lg:ml-0 ml-36 z-20 w-116 h-116 border-white p-4 m-20 rounded-full">
             <div className="w-106 h-106  border-2 border-red-300 p-2 rounded-full">
@@ -42,9 +47,20 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black pb-20">
-        <SocialIcons />
+      <hr className="border-t-2 border-red-300 my-4" />
+
+      <div className="bg-black  text-7xl font-bold text-white py-8">
+        <Marquee gradient={false} speed={50} pauseOnHover={true}>
+          <span className="mx-10">React</span>
+          <span className="mx-10">Tailwind</span>
+          <span className="mx-10">JavaScript</span>
+          <span className="mx-10">Supabase</span>
+          <span className="mx-10">Firebase</span>
+          <span className="mx-10">Machine Learning</span>
+        </Marquee>
       </div>
+      <hr className="border-t-2 border-red-300 my-4" />
+      <div className="min-h-screen bg-gray-400"></div>
     </>
   );
 };

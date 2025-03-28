@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <>
-      <div className="fixed z-100 ml-10">
+      <div className=" fixed w-full z-100 ">
         <Navbar />
       </div>
       <div className="flex bg-black flex-col">
@@ -61,7 +61,7 @@ const About = () => {
           <SocialIcons />
         </div>
 
-        <div className=" bg-black lg:px-86 p-8">
+        <div className=" bg-gradient-to-b from-black to-gray-500 lg:px-86 p-8">
           <h2 className="text-5xl  font-bold text-white mb-10 text-center">
             🎓 My Education Timeline
           </h2>

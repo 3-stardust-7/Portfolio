@@ -89,14 +89,17 @@ const projectsData = [
 
   return (
     <>
-      <div className="bg-black fixed w-full pr-80 z-100 ml-10">
+      <div className=" fixed w-full z-100 ">
         <Navbar />
       </div>
-      <div className="h-screen bg-black  text-white">
+      <div className="h-screen bg-gradient-to-b from-black to-gray-500  text-white">
         <div className="text-5xl p-30 font-bold">
           My <span className="text-red-300">Projects</span>
         </div>
-        <section id="projects" className="bg-black text-white ">
+        <section
+          id="projects"
+          className="bg-gradient-to-b from-black to-gray-500 text-white "
+        >
           <div className="container mx-auto  px-6">
             {/* Projects Grid */}
             <div className="grid grid-cols-1 gap-20 lg:p-20">

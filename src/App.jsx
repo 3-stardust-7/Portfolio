@@ -6,23 +6,25 @@ import About from "./pages/About";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+    <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen transition-all duration-300">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
 
-        {/* 404 - Not Found */}
-        <Route
-          path="*"
-          element={
-            <h1 className="text-center text-3xl text-red-500 mt-10">
-              404 - Page Not Found 😢
-            </h1>
-          }
-        />
-      </Routes>
-    </Router>
+          {/* 404 - Not Found */}
+          <Route
+            path="*"
+            element={
+              <h1 className="text-center text-3xl text-red-500 mt-10">
+                404 - Page Not Found 😢
+              </h1>
+            }
+          />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

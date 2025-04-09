@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,10 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,10 +22,27 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    toast.success("Form Submitted Successfully! ");
-    // You can add form submission logic here (e.g., API call)
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // prevent page reload
+
+    try {
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: formData.name, // 👈 MATCHING TEMPLATE
+          email: formData.email, // 👈 MATCHING TEMPLATE
+          //phone: "", // 👈 You don't have phone input yet, so empty for now
+          message: formData.message,
+        },
+        PUBLIC_KEY
+      );
+      toast.success("Form Submitted Successfully! ");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message. Please try again.");
+    }
   };
 
   return (

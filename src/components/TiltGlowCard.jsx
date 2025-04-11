@@ -1,6 +1,7 @@
 // components/TiltGlowCard.jsx
 import Tilt from "react-parallax-tilt";
 import { Sparkles } from "lucide-react";
+import Magnet from "./Magnet";
 
 export default function TiltGlowCard({ title, description, icon }) {
   return (
@@ -19,9 +20,9 @@ export default function TiltGlowCard({ title, description, icon }) {
         <p className="text-gray-600 text-sm mb-4">
           This is a short description of something awesome.
         </p>
-        <button className="px-4 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition">
+        <Magnet className="px-4 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition">
           Learn More
-        </button>
+        </Magnet>
       </div>
     </Tilt>
   );

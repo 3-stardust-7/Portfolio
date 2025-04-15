@@ -4,6 +4,7 @@ import SocialIcons from "../components/Socialicons";
 import Marquee from "react-fast-marquee";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import Typewriter from "../components/Typewriter";
 
 import TiltGlowCard from "../components/TiltGlowCard";
 
@@ -22,7 +23,11 @@ const Landing = () => {
             <h1 className="mt-40 px-20 text-7xl font-bold animate-fade-in-up">
               Hey! I'm <span className="text-red-300">Kirubha</span>
             </h1>
-            <p className="p-20 font-light text-2xl">
+            <div className="flex flex-row px-20 py-10 font-light text-2xl">
+           
+              <Typewriter />
+            </div>
+            <p className="py-10 px-20 font-light text-2xl">
               A passionate web developer who loves crafting beautiful UIs.
               Skilled in React, Tailwind, and Supabase, with a growing interest
               in machine learning

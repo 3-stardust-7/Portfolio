@@ -103,19 +103,19 @@ const projectsData = [
         >
           <div className="container mx-auto  px-6">
             {/* Projects Grid */}
-            <div className="grid grid-cols-1 gap-20 lg:p-20">
+            <div className="grid md:grid-cols-2 gap-10 lg:p-20">
               {" "}
               {/* Only 1 column for all screen sizes */}
               {projectsData.map((project) => (
                 <div
                   key={project.id}
-                  className="bg-white lg:w-4/5 mx-auto rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+                  className="bg-white mx-auto rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
                 >
                   {/* Project Image */}
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full sm:h-100 lg:h-150 p-2 rounded-2xl object-cover"
+                    className="w-full sm:h-100 lg:h-100 p-2 rounded-2xl object-cover"
                   />
 
                   {/* Project Details */}

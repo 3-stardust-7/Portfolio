@@ -62,6 +62,75 @@ const About = () => {
           <SocialIcons />
         </div>
 
+        <div className="text-5xl font-bold flex justify-center py-20">
+          Tech Suite
+        </div>
+        <div className="text-3xl font-semibold flex justify-center">
+          Frontend
+        </div>
+        <div className="flex flex-col items-center gap-4 mt-10 lg:flex-row lg:justify-center lg:gap-5 lg:p-10">
+          <img
+            src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react"
+            alt="React"
+          />
+          <img
+            src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            alt="React Native"
+          />
+          <img
+            src="https://img.shields.io/badge/React_Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white"
+            alt="React Redux"
+          />
+          <img
+            src="https://img.shields.io/badge/Vite-purple?style=for-the-badge&logo=vite"
+            alt="Vite"
+          />
+          <img
+            src="https://img.shields.io/badge/TailwindCSS-blue?style=for-the-badge&logo=tailwind-css"
+            alt="TailwindCSS"
+          />
+          <img
+            src="https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=html5"
+            alt="HTML"
+          />
+          <img
+            src="https://img.shields.io/badge/CSS-blue?style=for-the-badge&logo=css3"
+            alt="CSS"
+          />
+          <img
+            src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript"
+            alt="JavaScript"
+          />
+        </div>
+        <h2 className="text-3xl font-semibold mt-10 text-center">🛠️ Backend</h2>
+        <div className="flex flex-col items-center gap-4 mt-4 lg:flex-row lg:justify-center lg:gap-5 lg:p-10">
+          <img
+            src="https://img.shields.io/badge/Supabase-green?style=for-the-badge&logo=supabase"
+            alt="Supabase"
+          />
+          <img
+            src="https://img.shields.io/badge/Firebase_Auth-orange?style=for-the-badge&logo=firebase"
+            alt="Firebase Auth"
+          />
+        </div>
+        <h2 className="text-3xl font-semibold mt-10 mb-  text-center">
+          📚 Tools / Others
+        </h2>
+        <div className="flex flex-col items-center gap-4 mt-4 lg:flex-row lg:justify-center lg:gap-5 lg:p-10">
+          <img
+            src="https://img.shields.io/badge/Git-black?style=for-the-badge&logo=git"
+            alt="Git"
+          />
+          <img
+            src="https://img.shields.io/badge/Jupyter-orange?style=for-the-badge&logo=jupyter"
+            alt="Jupyter"
+          />
+          <img
+            src="https://img.shields.io/badge/MongoDB_Compass-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+            alt="MongoDB Compass"
+          />
+        </div>
+
         <div className=" bg-gradient-to-b from-black to-gray-500 lg:px-86 p-8">
           <h2 className="text-5xl  font-bold text-white mb-10 text-center">
             🎓 My Education Timeline

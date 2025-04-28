@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Typewriter from "../components/Typewriter";
 
-import TiltGlowCard from "../components/TiltGlowCard";
 
 //import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -69,11 +68,6 @@ const Landing = () => {
         </Marquee>
       </div>
       <hr className="border-t-3 border-red-300 m-4 mx-8" />
-
-      {/* Added TiltGlowCard here */}
-      <div className="flex justify-center p-10 bg-black">
-        <TiltGlowCard />
-      </div>
 
       <div className="bg-black p-20">
         <Contact />

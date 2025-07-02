@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Github, Linkedin, Twitter, Mail, ExternalLink } from "lucide-react";
+import Typewriter from "../components/Typewriter"
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -53,43 +54,6 @@ const SocialIcons = () => {
           </div>
         </a>
       ))}
-    </div>
-  );
-};
-
-const Typewriter = () => {
-  const texts = ["Full Stack Developer", "UI/UX Enthusiast", "React Specialist", "ML Explorer"];
-  const [currentText, setCurrentText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      const current = texts[currentIndex];
-      
-      if (!isDeleting) {
-        setCurrentText(current.substring(0, currentText.length + 1));
-        if (currentText === current) {
-          setTimeout(() => setIsDeleting(true), 2000);
-        }
-      } else {
-        setCurrentText(current.substring(0, currentText.length - 1));
-        if (currentText === "") {
-          setIsDeleting(false);
-          setCurrentIndex((prev) => (prev + 1) % texts.length);
-        }
-      }
-    }, isDeleting ? 50 : 100);
-
-    return () => clearTimeout(timeout);
-  }, [currentText, isDeleting, currentIndex, texts]);
-
-  return (
-    <div className="flex items-center">
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-        {currentText}
-      </span>
-      <span className="ml-1 animate-pulse text-purple-400">|</span>
     </div>
   );
 };
